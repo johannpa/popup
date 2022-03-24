@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapsis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
     box-sizing: border-box;
@@ -22,7 +22,7 @@ button {
     font-family: inherit;
 }
 
-popup-container {
+.popup-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,9 +30,13 @@ popup-container {
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+.popup-container.active {
+    display: flex;
 }
 
 .popup {
@@ -46,7 +50,7 @@ popup-container {
 
 .popup button {
     background-color: #fff;
-    color: crimson;
+    color: rebeccapurple;
     font-size: 2rem;
     position: absolute;
     top: 10px;
